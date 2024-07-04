@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Lora-Bold.ttf",
+      "sha1": "6181c8c5c0046d8f9a484293108a27bba37618de"
+    },
+    {
+      "path": "assets/fonts/Lora-VariableFont_wght.ttf",
+      "sha1": "99892d245c2df12e4073a72caae6c064f2e9672a"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Medium.ttf",
+      "sha1": "25c429296b9d6eb242cba92d1ee7fae484b019cb"
+    },
+    {
+      "path": "assets/fonts/YoungSerif-Regular.ttf",
+      "sha1": "42abd3af5eba4ecdc77ea1ff885ce4a4e941f1ae"
+    }
+  ]
+}
