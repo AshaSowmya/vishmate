@@ -1,0 +1,192 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+
+      .inputfield {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .marketplace_input {
+        padding: .25rem;
+        border-radius: .5rem;
+        border: 1px solid #777;
+        width: 250px;
+      }
+      
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        flex: 2;
+
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: space-around;
+
+          .formInput {
+            width: 40%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+
+            input {
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+
+          button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        }
+      }
+      .table-market {
+        border-radius: 10px;
+        border: 2px solid rgb(177, 169, 169);
+        width: 90%;
+        margin-top: 2%;
+      }
+      .tablecell-market {
+        font-size: 20px;
+        font-family: Lora;
+      }
+      .actionIcon-market {
+        cursor: pointer;
+      }
+      .ios-toggle {
+        margin-left: .75rem;
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 25px;
+        width: 45px;
+      }
+      .ios-toggle input,
+      .ios-toggle input:active {
+        border: 0;
+        height: 0;
+        opacity: 0;
+        outline: none;
+        position: absolute;
+        left: -5000px;
+        width: 0;
+      }
+      .ios-toggle label {
+        background: "#A9A9A9";
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        padding: 4px;
+        position: relative;
+        transition: 0.3s ease-out;
+        width: 100%;
+      }
+      .ios-toggle label::before {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 1px #ddd;
+        content: "";
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        right: auto;
+        text-indent: 40px;
+        top: 0;
+        transition: 0.25s ease-in-out;
+        width: 20px;
+        z-index: 2;
+      }
+      .ios-toggle label::after {
+        background: linear-gradient(
+          180deg,
+          #0f0c29 0%,
+          #302b63 48.5%,
+          #24243e 100%
+        );
+        border-radius: 12px;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: 0.25s ease-in-out;
+        width: 20px;
+        z-index: 1;
+      }
+      .ios-toggle input:active + label::before {
+        width: 24px;
+      }
+      .ios-toggle input:checked + label {
+      }
+      .ios-toggle input:checked + label::after {
+        right: 12px;
+        width: 100%;
+      }
+      .ios-toggle input:checked + label::before {
+        box-shadow: 0 0 0 1px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+        left: calc(100% - 20px);
+      }
+      .ios-toggle input:checked:active + label::before {
+        left: calc(100% - 24px);
+      }
+      .category-label-market{
+        margin-left: 10%;
+        font-weight:bold;
+          font-size: 20px;
+      
+       }
+       .category-box-market{
+        margin-left: 20%;
+
+       }
+    }
+  }
+}

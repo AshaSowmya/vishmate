@@ -1,0 +1,231 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+
+      .category-form__label {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .category-frame__select,
+      .category-frame__input {
+        border-radius: 10px;
+        border: 1px solid #a1a1a1;
+        line-height: 1.5;
+        padding: 0.5rem 0.25rem;
+      }
+
+      .category-frame__select,
+      .category-frame__input[type="file"],
+      .category-frame__input {
+        width: 100%;
+      }
+
+      .category-frame__input:focus,
+      .category-frame__input:focus-within,
+      .category-frame__select:focus,
+      .category-frame__select:focus-within {
+        outline: none;
+      }
+
+      .alignment .category-frame__input {
+        width: 80%;
+        height: 100%;
+        text-align: center;
+      }
+
+      .font-size__input {
+        position: relative;
+      }
+
+      .px-symbol {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #555;
+      }
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        flex: 2;
+      }
+      .heading1 {
+        width: 100%;
+        height: 80%;
+        background: linear-gradient(
+          180deg,
+          #0f0c29 0%,
+          #302b63 48.5%,
+          #24243e 100%
+        );
+        border-radius: 20px 20px 0px 0px;
+        display: flex;
+        align-items: center;
+        gap: 750px;
+      }
+      .dropdown-container {
+        display: flex;
+        margin: 2%;
+        gap: 60%;
+        align-items: center;
+      }
+      .dropdown-container1 {
+        display: flex;
+        gap: 20px;
+      }
+      /* ImageRow.css */
+      .image-row {
+        display: flex;
+      }
+
+      .image-container {
+        position: relative; /* Makes child absolute positioning relative to this element */
+        width: 250px;
+        height: 250px;
+        overflow: hidden; /* Clips overflowed content to maintain shape */
+        border-radius: 15px 15px 0px 0px;
+        margin-left: 2%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        color: white;
+
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .icon-container {
+        position: absolute; /* To position the icons over the image */
+        bottom: 10px; /* Place icons at the bottom of the image */
+        right: 10px; /* Adjust positioning */
+        display: flex;
+        gap: 10px; /* Space between icons */
+      }
+      .overlay-top {
+        position: absolute; /* Positions this overlay at the top */
+        top: 5px; /* Adjusted to avoid clipping */
+        left: 10px; /* Positioned relative to the image container */
+        display: flex;
+
+        gap: 150px; /* Spacing between elements */
+      }
+
+      .icon {
+        width: 25px; /* Icon size */
+        height: 25px;
+        cursor: pointer; /* Indicate icons are clickable */
+        border-radius: 5px; /* Smooth edges */
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures image fills the container while maintaining aspect ratio */
+      }
+
+      .categoryframes-label {
+        margin-left: 10%;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .categoryframes-label1 {
+        margin-top: 100%;
+        margin-left: 20%;
+        margin-bottom: 20px;
+      }
+      .image {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px 15px 15px 15px;
+      }
+      /* ImageRow.css */
+      .images-order {
+        display: flex;
+        margin-left: 1%;
+        gap: 3%;
+        flex-wrap: wrap;
+        margin-bottom: 20%;
+      }
+      .image-row {
+        display: flex;
+      }
+
+      .image-container {
+        position: relative; /* Allows for absolute positioning of overlays */
+        width: 200px; /* Container size */
+        height: 200px; /* Container size */
+        overflow: hidden; /* Keeps content within bounds */
+        border-radius: 15px 15px 0px 0px; /* Rounded top corners */
+      }
+
+      .overlay-top {
+        position: absolute; /* Positions this overlay at the top */
+        top: 10px; /* Positioned from the top */
+        left: 20px; /* Positioned from the left */
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .overlay-bottom {
+        position: absolute; /* Positions this overlay at the bottom */
+        bottom: 10px; /* Positioned from the bottom */
+        right: 5px; /* Positioned from the right */
+        display: flex;
+        gap: 10px;
+      }
+
+      .image {
+        width: 100%; /* Ensures image fills the container */
+        height: 100%; /* Ensures image fills the container */
+        object-fit: cover; /* Maintains aspect ratio while filling */
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        padding: 5px;
+        background: white;
+        cursor: pointer;
+      }
+      .category-button {
+        margin-bottom: 10%;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .uploadimg {
+        width: 50%;       /* Example width */
+        height: 50%;      /* Example height */
+        background: #C4C4C4;
+        display: flex;  
+        margin-left: 30%;  
+        margin-top: 15%;  /* Use flexbox for centering */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;    /* Indicate that it's clickable */
+        border-radius: 7px;
+        text-align: center;
+        position: relative; /* Important for the hidden input positioning */
+      }
+      
+      .uploadimg-image {
+        max-width: 100%;    /* Adjust as needed */
+        max-height: 100%;   /* Adjust as needed */
+      }
+      
+      .coverimage {
+        margin-top: 10px;  /* Adjust as needed */
+        color: #333;       /* Example text color */
+      }
+    }
+  }
+}

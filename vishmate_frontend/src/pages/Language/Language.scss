@@ -1,0 +1,261 @@
+.new {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+  .newContainer {
+    flex: 6;  
+ 
+      .heading {
+        height: 50px;
+        background: linear-gradient(180deg, #0f0c29 0%, #302b63 48.5%, #24243e 100%);
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Lora;
+        font-size: 25px;
+        color: white;
+      }
+ 
+      .secondletter {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 5%;
+ 
+        .searchInput {
+          padding: 8px;
+          outline: none;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          width: 200px;
+          margin-left: 650px;
+          border: none;
+          background: #F5F5F5;
+ 
+        }
+ 
+        .buttonstyle {
+          padding: 12px 20px  12px 20px;
+          border: 1px solid black;
+          border-radius: 5px;
+          font-size: 12px;
+          cursor: pointer;
+          margin-left:35px;
+          transition: background-color 0.3s ease;
+          color:#0F0C29;
+          font-family:"Montserrat";
+          font-weight: 600;
+          font-size:13px ;
+         
+ 
+        }
+ 
+        .buttonstyle:hover {
+          background: linear-gradient(180deg, #1a1a2e 0%, #403d66 48.5%, #35355f 100%);
+          color: white;
+        }
+ 
+        .tablecontent {
+          margin-left: 10px;
+          width: 100%;
+          margin-top: 20px;
+ 
+        }
+ 
+        th,
+        td {
+          border: 1px solid #ccc;
+          padding: 50px;
+          text-align: center;
+        }
+ 
+        .languageImage {
+          width: 24px;
+          /* Adjust size of language images */
+          height: 24px;
+          vertical-align: middle;
+          /* Align images vertically within table cell */
+          margin-left: 5px;
+          /* Add spacing between text and image */
+        }
+ 
+        /* Toggle Switch Styling */
+        .toggleSwitch {
+          position: relative;
+          display: inline-block;
+          width: 40px;
+          height: 20px;
+        }
+ 
+        .toggleSwitch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+ 
+        /* Styling for slider (the track) */
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          /* Default color when off */
+          transition: 0.4s;
+          border-radius: 20px;
+          /* Roundness of the slider */
+        }
+ 
+        /* Styling for knob (the circular button) */
+        .slider:before {
+          position: absolute;
+          content: '';
+          height: 16px;
+          width: 16px;
+          left: 2px;
+          bottom: 2px;
+          background-color: white;
+          /* Default color of the knob */
+          transition: 0.4s;
+          border-radius: 50%;
+          /* Ensures the knob is circular */
+        }
+ 
+        .form-check form-switch{
+          justify-content: center;
+          display: flex;
+        }
+ 
+        /* Styling for when the toggle is checked (on) */
+        form-check-input:checked {
+          background: linear-gradient(180deg, #0F0C29 0%, #302B63 48.5%, #24243E 100%);
+          /* Color when toggle is checked (active) */
+        }
+ 
+ 
+        input:checked+.slider:before {
+          transform: translateX(20px);
+          /* Moves the knob to the right when ON */
+        }
+ 
+        .slider.round {
+          border-radius: 34px;
+          /* Larger border-radius for a rounder appearance */
+        }
+ 
+        .slider.round:before {
+          border-radius: 50%;
+          /* Ensures the knob is circular */
+        }
+ 
+        .actionIcon {
+          justify-content: space-between;
+        }
+ 
+        /* Styling for action icons */
+        .actionIcon {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          /* Add spacing between action icons */
+          cursor: pointer;
+        }
+ 
+        .actionIcon {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+ 
+        .formgroupall {
+          margin-left: 30px;
+        }
+ 
+        .savebutton {
+          background: #0F0C29;
+          margin-right: 300px;
+        }
+         .ios-toggle {
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 25px;
+        width: 56px;
+      }
+      .ios-toggle input,
+      .ios-toggle input:active {
+        border: 0;
+        height: 0;
+        opacity: 0;
+        outline: none;
+        position: absolute;
+        left: -5000px;
+        width: 0;
+      }
+      .ios-toggle label {
+        background: "#A9A9A9";
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        padding: 4px;
+        position: relative;
+        transition: 0.3s ease-out;
+        width: 100%;
+      }
+      .ios-toggle label::before {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 1px #ddd;
+        content: "";
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        right: auto;
+        text-indent: 40px;
+        top: 0;
+        transition: 0.25s ease-in-out;
+        width: 20px;
+        z-index: 2;
+      }
+      .ios-toggle label::after {
+        background: linear-gradient(180deg, #0F0C29 0%, #302B63 48.5%, #24243E 100%);
+        border-radius: 12px;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: 0.25s ease-in-out;
+        width: 20px;
+        z-index: 1;
+      }
+      .ios-toggle input:active + label::before {
+        width: 24px;
+      }
+      
+      .ios-toggle input:checked + label::after {
+     
+        right: 12px;
+        width: 100%;
+      }
+      .ios-toggle input:checked + label::before {
+        box-shadow: 0 0 0 1px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+        left: calc(100% - 20px);
+      }
+      .ios-toggle input:checked:active + label::before {
+        left: calc(100% - 24px);
+      }
+ 
+       
+ 
+ 
+ 
+      }
+    }
+  }
